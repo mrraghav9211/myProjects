@@ -47,10 +47,10 @@ td:last-child{
 }
 @media(max-width:720px){
 	table{
-		width: 80%;
+		width: 95%;
 	}
 	input{
-		width: 80%;
-		margin-left: 10%;
+		width: 95%;
+		margin-left: 2.5%;
 	}
 }
