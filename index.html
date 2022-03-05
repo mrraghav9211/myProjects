@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+		integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title> Simple Calculator</title>
+</head>
+
+<body>
+	<div class="Calculator">
+		 <form name = "form1">
+         <input class= "textview" name = "textview" dir="rtl">
+         </form>
+		<table>
+			<tbody>
+				<tr>
+					<td onclick = "form1.textview.value = '' ">C</td>
+					<td >+/-</td>
+					<td onclick = "insert('%')">%</td>
+					<td onclick = "insert('/')">/</td>
+				</tr>
+
+				<tr>
+					<td onclick = "insert(1)">1</td>
+					<td onclick = "insert(2)">2</td>
+					<td onclick = "insert(3)">3</td>
+					<td onclick = "insert('*')">*</td>
+				</tr>
+				<tr>
+					<td onclick = "insert(4)">4</td>
+					<td onclick = "insert(5)">5</td>
+					<td onclick = "insert(6)">6</td>
+					<td>-</td>
+				</tr>
+				<tr>
+					<td onclick = "insert(7)">7</td>
+					<td onclick = "insert(8)">8</td>
+					<td onclick = "insert(9)">9</td>
+					<td onclick = "insert('+')">+</td>
+				</tr>
+
+				<tr>
+					<td onclick = "insert(0)">0</td>
+					<td onclick = "insert('.')">.</td>
+					<td onclick = "backspace()" ><i class="fa-solid fa-xmark"></i></td>
+					<td style="background: indianred;" onclick="equal()">=</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+ <script src="index.js"></script>
+</body>
+
+</html>
