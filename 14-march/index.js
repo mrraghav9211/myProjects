@@ -71,14 +71,14 @@ let timeStr1 = `${date1.getHours()}:${date1.getMinutes()}`;
       const daily_title = document.getElementById('daily_location')
       daily_title.innerHTML = `Daily Forcast For ${res.city.name} ${res.city.country}`
     const x =res.list[0].dt_txt
-    x.split(0,4)
-    console.log(x)
+    let y =x.substring(0,10)
+   
     const first = document.getElementById('first')
     const first_temp = document.getElementById('first_temp')
     const first_main = document.getElementById('first_main')
     first_main.innerText = `${res.list[0].weather[0].main}  `
     first_temp.innerHTML = `${parseInt(res.list[0].main.temp)}&deg;`
-    first.innerText = x
+    first.innerText = y
     const img_container = document.getElementById('img_container');
     if(user_weather[0].main == "Clear"){
         img_container.src = "./sunny.png";
@@ -106,7 +106,7 @@ let timeStr1 = `${date1.getHours()}:${date1.getMinutes()}`;
     const second_main = document.getElementById('second_main')
     second_main.innerText = `${res.list[8].weather[0].main}`
     second_temp.innerHTML = `${parseInt(res.list[8].main.temp)}&deg;`
-    second.innerText = res.list[8].dt_txt
+    second.innerText = res.list[8].dt_txt.substring(0,10)
     const img_container2 = document.getElementById('img_container2');
     const second_weather = res.list[8].weather;
     if(second_weather[0].main == "Clear"){
@@ -135,7 +135,7 @@ let timeStr1 = `${date1.getHours()}:${date1.getMinutes()}`;
     const third_main = document.getElementById('third_main')
     third_main.innerText = `${res.list[16].weather[0].main}`
     third_temp.innerHTML = `${parseInt(res.list[16].main.temp)}&deg;`
-    third.innerText = res.list[16].dt_txt
+    third.innerText = res.list[16].dt_txt.substring(0,10)
 
     const img_container3 = document.getElementById('img_container3');
     const third_weather = res.list[16].weather;
@@ -166,7 +166,7 @@ const four = document.getElementById('four')
 const four_main = document.getElementById('four_main')
 four_main.innerText = `${res.list[24].weather[0].main}`
 four_temp.innerHTML = `${parseInt(res.list[24].main.temp)}&deg;`
-four.innerText = res.list[24].dt_txt
+four.innerText = res.list[24].dt_txt.substring(0,10)
 
 const img_container4 = document.getElementById('img_container4');
 const four_weather = res.list[24].weather;
@@ -197,7 +197,7 @@ const five = document.getElementById('five')
 const five_main = document.getElementById('five_main')
 five_main.innerText = `${res.list[34].weather[0].main}`
 five_temp.innerHTML = `${parseInt(res.list[34].main.temp)}&deg;`
-five.innerText = res.list[34].dt_txt
+five.innerText = res.list[34].dt_txt.substring(0,10)
 
 const img_container5 = document.getElementById('img_container5');
 const five_weather = res.list[34].weather;
@@ -311,14 +311,14 @@ else if(user_weather[0].main == "Mist"){
       daily_title.innerHTML = `Daily Forcast For ${res.city.name} ${res.city.country}`
 
     const x =res.list[0].dt_txt
-    x.split(0,4)
-    console.log(x)
+    let y = x.substring(0,10)
+   
     const first = document.getElementById('first')
     const first_temp = document.getElementById('first_temp')
     const first_main = document.getElementById('first_main')
     first_main.innerText = `${res.list[0].weather[0].main}  `
     first_temp.innerHTML = `${parseInt(res.list[0].main.temp)}&deg;`
-    first.innerText = x
+    first.innerText = y
     const img_container = document.getElementById('img_container');
     if(user_weather[0].main == "Clear"){
         img_container.src = "./sunny.png";
@@ -346,7 +346,7 @@ else if(user_weather[0].main == "Mist"){
     const second_main = document.getElementById('second_main')
     second_main.innerText = `${res.list[8].weather[0].main}`
     second_temp.innerHTML = `${parseInt(res.list[8].main.temp)}&deg;`
-    second.innerText = res.list[8].dt_txt
+    second.innerText = res.list[8].dt_txt.substring(0,10)
     const img_container2 = document.getElementById('img_container2');
     const second_weather = res.list[8].weather;
     if(second_weather[0].main == "Clear"){
@@ -376,7 +376,7 @@ else if(user_weather[0].main == "Mist"){
     const third_main = document.getElementById('third_main')
     third_main.innerText = `${res.list[16].weather[0].main}`
     third_temp.innerHTML = `${parseInt(res.list[16].main.temp)}&deg;`
-    third.innerText = res.list[16].dt_txt
+    third.innerText = res.list[16].dt_txt.substring(0,10)
     const img_container3 = document.getElementById('img_container3');
     const third_weather = res.list[16].weather;
     if(third_weather[0].main == "Clear"){
@@ -406,7 +406,7 @@ const four = document.getElementById('four')
 const four_main = document.getElementById('four_main')
 four_main.innerText = `${res.list[24].weather[0].main}`
 four_temp.innerHTML = `${parseInt(res.list[24].main.temp)}&deg;`
-four.innerText = res.list[24].dt_txt
+four.innerText = res.list[24].dt_txt.substring(0,10)
 const img_container4 = document.getElementById('img_container4');
 const four_weather = res.list[24].weather;
     if(four_weather[0].main == "Clear"){
@@ -437,7 +437,7 @@ const five = document.getElementById('five')
 const five_main = document.getElementById('five_main')
 five_main.innerText = `${res.list[34].weather[0].main}`
 five_temp.innerHTML = `${parseInt(res.list[34].main.temp)}&deg;`
-five.innerText = res.list[34].dt_txt
+five.innerText = res.list[34].dt_txt.substring(0,10)
 
 const img_container5 = document.getElementById('img_container5');
 const five_weather = res.list[34].weather;
