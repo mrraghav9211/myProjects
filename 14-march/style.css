@@ -160,7 +160,7 @@ h2{
     }
     .card{
     width: 80%;
-    height: 45vh;
+    height: 42vh;
     }
     .daily{
         width: 80%;
@@ -175,7 +175,7 @@ h2{
 @media(max-width:550px) {
     .card{
     width: 95%;
-    height: 45vh;
+    height: 37vh;
     }
     .daily{
         width: 95%;
