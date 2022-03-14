@@ -5,6 +5,14 @@ const do_somethng = function(response){
 // default function
 
 const handle_data = function(res){
+    
+    let sec = res.city.sunset;
+let date = new Date(sec * 1000);
+let timeStr = `${date.getHours()}:${date.getMinutes()}`;
+let sec1 = res.city.sunrise;
+let date1 = new Date(sec1 * 1000);
+let timeStr1 = `${date1.getHours()}:${date1.getMinutes()}`;
+    
     const user_arr = res.list[0].main;
     const temp_x = parseInt(res.list[0].main.temp)
     const user_weather = res.list[0].weather;
@@ -50,8 +58,8 @@ const handle_data = function(res){
      }
     temp.innerHTML = `${temp_x}&deg;`
     weather.innerText = user_weather[0].main
-    max.innerHTML = `Max ${parseInt(user_arr.temp_max)}&deg;`
-    min.innerHTML = `Min ${parseInt(user_arr.temp_min)}&deg;`
+     max.innerHTML = `Sunrise ${timeStr1} am`
+    min.innerHTML = `Sunset ${timeStr} pm`
     location.innerText = `${res.city.name} ${res.city.country}   ${new Date().toLocaleString()}`
     
 
@@ -237,6 +245,15 @@ fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${long}&u
 // Handle search function
 
 const handle_search = function(res){
+     
+    let sec = res.city.sunset;
+let date = new Date(sec * 1000);
+let timeStr = `${date.getHours()}:${date.getMinutes()}`;
+let sec1 = res.city.sunrise;
+let date1 = new Date(sec1 * 1000);
+let timeStr1 = `${date1.getHours()}:${date1.getMinutes()}`;
+    
+    
     const user_arr = res.list[0].main
     const user_weather = res.list[0].weather;
     console.log(res.city.country)
@@ -281,8 +298,8 @@ else if(user_weather[0].main == "Mist"){
     
     temp.innerHTML = `${parseInt(user_arr.temp)}&deg;`
     weather.innerText = user_weather[0].main
-    max.innerHTML = `Max ${parseInt(user_arr.temp_max)}&deg;`
-    min.innerHTML = `Min ${parseInt(user_arr.temp_min)}&deg;`
+      max.innerHTML = `Sunrise ${timeStr1} am`
+    min.innerHTML = `Sunset ${timeStr} pm`
     location.innerText = `${res.city.name} ${res.city.country}`
 
 
