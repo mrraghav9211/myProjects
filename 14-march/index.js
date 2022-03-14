@@ -52,7 +52,7 @@ const handle_data = function(res){
     weather.innerText = user_weather[0].main
     max.innerHTML = `Max ${parseInt(user_arr.temp_max)}&deg;`
     min.innerHTML = `Min ${parseInt(user_arr.temp_min)}&deg;`
-    location.innerText = `${res.city.name} ${res.city.country}`
+    location.innerText = `${res.city.name} ${res.city.country}   ${new Date().toLocaleString()}`
     
 
     
