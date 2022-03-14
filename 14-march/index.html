@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>WeatherApp</title>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body> 
+    <nav>
+        <input type="text" id="txt_input" placeholder="Search City">
+        <button id="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </nav>
+    <br>
+    <div class="card">
+        <h2 id="location"></h2>
+        <div class="content">
+            <h1 id="temp_container"></h1>
+            <h4 id="weather_container"></h4>
+            <span id="max_temp"></span><span id="min_temp"></span>
+        </div>
+        <div class="img">
+            <img id="img" src="" alt="">
+        </div>
+    </div>
+   <!-- card second -->
+    <div class="card2">
+        <h2 id="location2"></h2>
+        <h1 id="temp"></h1>
+        <p>Feel Like</p>
+        <table>
+            <tbody>
+                <tr>
+                    <td><i class="fa-solid fa-temperature-high"></i> High</td>
+                    <td id="high"></td>
+                </tr>
+                <tr>
+                    <td><i class="fa-solid fa-temperature-high"></i> Low</td>
+                    <td id="low"></td>
+                </tr>
+                <tr>
+                    <td><i class="fa-solid fa-wind"></i> Wind</td>
+                    <td id="wind"></td>
+                </tr>
+                <tr>
+                    <td><i class="fa-regular fa-tire-pressure-warning"></i>> Pressure</td>
+                    <td id="pressure"></td>
+                </tr>
+                <tr>
+                    <td><i class="fa-regular fa-eye-slash"></i> Visibility</td>
+                    <td id="visibility"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+      <!-- daily forcasting -->
+
+      <div class="daily">
+        <h2 id="daily_location">Daily Forecast</h2>
+        <div class="flex">
+            <div class="flex1">
+                <h3 id="first">today</h3>
+                <h1 id="first_temp">21</h1>
+                <img id="img_container" src="./mist.png" alt="">
+                <h4 id="first_main">clear</h4>
+            </div>
+
+            <div class="flex1">
+                <h3 id="second">today</h3>
+                <h1 id="second_temp">21</h1>
+                <img id="img_container2" src="./mist.png" alt="">
+                <h4 id="second_main">clear</h4>
+            </div>
+
+            <div class="flex1">
+                <h3 id="third">today</h3>
+                <h1 id="third_temp">21</h1>
+                <img id="img_container3" src="./mist.png" alt="">
+                <h4 id="third_main">clear</h4>
+            </div>
+
+            <div class="flex1">
+                <h3 id="four">today</h3>
+                <h1 id="four_temp">21</h1>
+                <img id="img_container4" src="./mist.png" alt="">
+                <h4 id="four_main">clear</h4>
+            </div>
+
+            <div class="flex1">
+                <h3 id="five">today</h3>
+                <h1 id="five_temp">21</h1>
+                <img id="img_container5" src="./mist.png" alt="">
+                <h4 id="five_main">clear</h4>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
