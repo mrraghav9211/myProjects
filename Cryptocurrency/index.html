@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>CryptoView</title>
+</head>
+
+<body>
+
+    <!-- Navbar Section --> 
+    <nav>
+        <div class="crypto_nav">
+            <img src="./cryptocurrency.png" alt="">
+            <h1>Crypto<sapn style="color: rgb(223, 98, 9);">View</sapn>
+            </h1>
+        </div>
+        <a href="./search.html">Search</a>
+    </nav>
+    <!-- main section -->
+    <section class="main">
+        <div class="some_text">
+            <h1>Take a step into<br>
+                the <span style="color: rgb(220, 161, 14);">Crypto world</span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique dolores, perferendis minima nemo
+                impedit sit eius sunt architecto, illo ducimus voluptatibus, quam esse officia error incidunt ipsum ipsa
+                sed nulla.
+            </p>
+            <br>
+            <button>Read More</button>
+        </div>
+        <div class="image_container">
+            <img src="./business.png" alt="">
+        </div>
+    </section>
+    <!-- trending  coin -->
+    <div class="trnd_coin_conatiner">
+        <section class="trending_coin">
+
+            <div onclick="location.href='./details.html?coin=bitcoin'" class="card">
+                <img src="https://assets.coingecko.com/coins/images/1/small/bitcoin.png?1547033579" alt="">
+                <div>
+                    <h3 style="  text-align: center;">Bitcoin (BTC)</h3>
+                    <h5 style="  font-weight: bold;">₹ <span id="bitcoin"></span></h5>
+                </div>
+            </div>
+            <div onclick="location.href='./details.html?coin=ethereum'" class="card">
+                <img src="https://assets.coingecko.com/coins/images/279/large/ethereum.png" alt="">
+                <div>
+                    <h3 style="  text-align: center;">Ethereum(ETH)</h3>
+                    <h5 style="  font-weight: bold;">₹ <span id="ethereum"></span></h5>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://assets.coingecko.com/coins/images/4284/large/Helium_HNT.png" alt="">
+                <div>
+                    <h3 style="  text-align: center;">Helium(HNT)</h3>
+                    <h5 style="  font-weight: bold;">₹ <span id="hnt"></span></h5>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://assets.coingecko.com/coins/images/22785/large/download.png" alt="">
+                <div>
+                    <h3 style="  text-align: center;">AltSwitch(ALTS)</h3>
+                    <h5 style="  font-weight: bold;">₹ <span id="alts"></span></h5>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://assets.coingecko.com/coins/images/5/large/dogecoin.png" alt="">
+                <div>
+                    <h3 style="  text-align: center;">Dogecoin(DOGE)</h3>
+                    <h5 style="  font-weight: bold;">₹ <span id="doge"></span></h5>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://assets.coingecko.com/coins/images/18616/large/1024-1024-02.png" alt="">
+                <div>
+                    <h3 style="  text-align: center;">PolkaEx(PKEX)</h3>
+                    <h5 style="  font-weight: bold;">₹ <span id="pkex"></span></h5>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://assets.coingecko.com/coins/images/975/large/cardano.png" alt="">
+                <div>
+                    <h3 style="  text-align: center;">Cardano(ADA)</h3>
+                    <h5 style="  font-weight: bold;">₹ <span id="ada"></span></h5>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://assets.coingecko.com/coins/images/100/large/Stellar_symbol_black_RGB.png" alt="">
+                <div>
+                    <h3 style="  text-align: center;">Stellar(XLM))</h3>
+                    <h5 style="  font-weight: bold;">₹ <span id="xlm"></span></h5>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://assets.coingecko.com/coins/images/10365/large/near_icon.png" alt="">
+                <div>
+                    <h3 style="  text-align: center;">NEAR Protocol</h3>
+                    <h5 style="  font-weight: bold;">₹ <span id="near"></span></h5>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://assets.coingecko.com/coins/images/2/large/litecoin.png" alt="">
+                <div>
+                    <h3 style="  text-align: center;">Litecoin(LTC)</h3>
+                    <h5 style="  font-weight: bold;">₹ <span id="ltc"></span></h5>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://assets.coingecko.com/coins/images/4128/large/solana.png" alt="">
+                <div>
+                    <h3 style="  text-align: center;">Solana(SOL)</h3>
+                    <h5 style="  font-weight: bold;">₹ <span id="sol"></span></h5>
+                </div>
+            </div>
+        </section>
+    </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

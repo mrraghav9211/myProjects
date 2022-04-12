@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 5px 30px rgb(223, 230, 218);
+    /* background-image: linear-gradient(to right top, #68ee20, #4aee57, #2aee7a, #03ec97, #0ee9af); */
+}
+
+nav img {
+    width: 3rem;
+    height: 3rem;
+}
+
+nav>.crypto_nav {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: space-around;
+}
+
+nav>a {
+    border: 2px solid gray;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+nav>a:hover {
+    background-color: gray;
+    color: white;
+    transition: 1s;
+}
+
+.main {
+    
+    box-shadow: 0px -5px 20px lightblue inset;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.main .some_text {
+    /* float: left; */
+    margin-top: 100px;
+    margin-left: 30px;
+}
+
+.main .some_text h1 {
+    font-size: 50px;
+    font-family: 'Rubik Moonrocks', cursive;
+}
+
+.main .some_text button {
+    background-image: linear-gradient(to right top, #308104, #3f9c2c, #4cb94c, #59d66b, #66f48b);
+    padding: 8px 20px 8px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    box-shadow: rgba(40, 243, 121, 0.25) 0px 50px 100px -20px, rgba(10, 211, 94, 0.869) 0px 30px 60px -30px, rgba(32, 220, 19, 0.35) 0px -2px 6px 0px inset;
+}
+
+.main .some_text p {
+    max-width: 450px;
+}
+
+.main .image_container img {
+    width: 700px;
+    height: 350px;
+    /* float: right; */
+    /* margin-right: 50px; */
+
+
+}
+
+.trnd_coin_conatiner {
+    /* background-color: #ADE8F4; */
+    padding: 2rem;
+    overflow-x: hidden;
+
+}
+
+.trending_coin {
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Nunito', sans-serif;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    gap: 20px;
+    position: relative;
+    animation-name: smooth_scroll;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.trending_coin>.card {
+    display: flex;
+    cursor: pointer;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+    width: 230px;
+    height: 100px;
+    flex-shrink: 0;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+}
+
+.card>img {
+    width: 50px;
+    height: 50px;
+
+}
+
+.card h3 {
+    color: #04ad28be;
+}
+
+@keyframes smooth_scroll {
+    from {
+        left: 0%;
+    }
+
+    to {
+        left: -100%;
+    }
+}
+
+@media(max-width:480px){
+    .main .image_container img {
+        width: 350px;
+        height: 150px;
+    }
+    .trending_coin>.card {
+        width: 150px;
+        height: 80px;
+    }
+    .card>img {
+        width: 30px;
+        height: 30px;
+    
+    }
+    .card h3{
+        font-size: 15px;
+    }
+}
+@media(max-width:1200px){
+    .main .image_container img {
+        width: 500px;
+        height: 250px;
+    }
+}
