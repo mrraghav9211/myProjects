@@ -140,8 +140,8 @@ nav>a:hover {
 
 @media(max-width:480px){
     .main .image_container img {
-        width: 350px;
-        height: 150px;
+         max-width: 360px;
+        max-height: 180px;
     }
     .trending_coin>.card {
         width: 150px;
