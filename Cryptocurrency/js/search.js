@@ -23,7 +23,7 @@ const showData = function (data) {
         img_elem.src = search_data.thumb;
         rank_elem.innerText = search_data.market_cap_rank;
         name_elem.innerText = `${search_data.name} (${search_data.symbol})`;
-        show_more.innerText = "Show more";
+        show_more.innerText = "More";
         show_more.href = `./details.html?coin=${search_data.id}`;
 
         more_elem.appendChild(show_more);
