@@ -138,7 +138,7 @@ nav>a:hover {
     }
 }
 
-@media(max-width:480px){
+@media(max-width:580px){
     .main .image_container img {
         max-width: 360px;
         max-height: 180px;
